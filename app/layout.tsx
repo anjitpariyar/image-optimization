@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,7 +16,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Image Optimization - Web-Optimized Images in .webp Format",
   description: "Optimize images for the web with our API. Convert images to .webp format, reduce file size to under 100KB, and resize images to a maximum width of 2500px while maintaining aspect ratio.",
-  
+  keywords: "image optimization, webp, image compression, image resizing, image conversion, image processing, image API, WebP Conversion, Fast Loading Images, Web Performance",
 };
 
 export default function RootLayout({
@@ -29,6 +30,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <SpeedInsights />
+        
       </body>
     </html>
   );
