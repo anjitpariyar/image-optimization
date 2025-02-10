@@ -18,6 +18,7 @@ export const metadata: Metadata = {
   title: "Image Optimization - Web-Optimized Images in .webp Format",
   description: "Optimize images for the web with our API. Convert images to .webp format, reduce file size to under 100KB, and resize images to a maximum width of 2500px while maintaining aspect ratio.",
   keywords: "image optimization, webp, image compression, image resizing, image conversion, image processing, image API, WebP Conversion, Fast Loading Images, Web Performance",
+  URL: "https://image-optimization.tech/"
 };
 
 export default function RootLayout({
