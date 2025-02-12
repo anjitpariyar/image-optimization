@@ -33,6 +33,16 @@ export default function RootLayout({
         {children}
         <SpeedInsights />
         <Analytics />
+        <footer className="fixed bottom-0 w-full text-center p-4 ">
+          <p>
+            <a href="https://www.instagram.com/limbo_anj/" target="_blank">
+              Any suggestions or questions? DM {" "}
+              <span className="hover:underline">
+                @limbo_anj
+              </span>
+            </a>
+          </p>
+        </footer>
         
       </body>
     </html>
