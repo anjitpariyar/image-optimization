@@ -34,11 +34,9 @@ export async function processImage(formData: FormData) {
     let quality = 80;
     let optimizedImage = await optimizedBuffer(quality);
 
-    debugger;
 
      // Reduce quality iteratively until the image is under 100KB
-     while (optimizedImage.length > 100 * 1024 && quality >= 10) {
-      debugger
+     while (optimizedImage.length > 100 * 1024 && quality >= 40) {
       quality -= 5; // Reduce quality by 5% in each iteration
       optimizedImage = await optimizedBuffer(quality);
     }

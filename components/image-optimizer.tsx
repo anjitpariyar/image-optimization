@@ -67,6 +67,7 @@ export default function ImageOptimizer() {
     const response = await processImage(formData)
 
     if (response.success && response.data) {
+      console.log("response", response.data)
       setResult(response.data)
     } else {
       setError(response.error || "Failed to process image")
@@ -107,7 +108,7 @@ export default function ImageOptimizer() {
         <Card className="p-4">
           <div className="space-y-2">
             <p className="text-sm text-center">Processing image...</p>
-            <Progress value={66} />
+            <Progress value={66}  />
           </div>
         </Card>
       )}
