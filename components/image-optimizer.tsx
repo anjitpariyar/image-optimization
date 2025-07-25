@@ -22,6 +22,7 @@ export default function ImageOptimizer() {
   const [isProcessing, setIsProcessing] = useState(false)
   const [result, setResult] = useState<OptimizedImage | null>(null)
   const [error, setError] = useState<string | null>(null)
+  
 
   const handleDrag = (e: React.DragEvent) => {
     e.preventDefault()
